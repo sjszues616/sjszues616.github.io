@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>项目部署 | 石壳壳的技术博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="项目部署 环境搭建 python 虚拟环境  django环境部署  django软件安装 项目基本操作">
+<meta name="keywords" content="运维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目部署">
+<meta property="og:url" content="http://kekebing.com/myblogs/2019/07/25/项目部署 环境搭建/index.html">
+<meta property="og:site_name" content="石壳壳的技术博客">
+<meta property="og:description" content="项目部署 环境搭建 python 虚拟环境  django环境部署  django软件安装 项目基本操作">
+<meta property="og:locale" content="chinese">
+<meta property="og:updated_time" content="2019-07-25T03:34:35.529Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="项目部署">
+<meta name="twitter:description" content="项目部署 环境搭建 python 虚拟环境  django环境部署  django软件安装 项目基本操作">
+  
+    <link rel="alternate" href="/myblogs/atom.xml" title="石壳壳的技术博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/myblogs/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/myblogs/" id="logo">石壳壳的技术博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/myblogs/" id="subtitle">石壳壳</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/myblogs/">Home</a>
+        
+          <a class="main-nav-link" href="/myblogs/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/myblogs/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://kekebing.com/myblogs"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-项目部署 环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/myblogs/2019/07/25/项目部署 环境搭建/" class="article-date">
+  <time datetime="2019-07-25T03:29:31.000Z" itemprop="datePublished">2019-07-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      项目部署
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="项目部署-环境搭建"><a href="#项目部署-环境搭建" class="headerlink" title="项目部署 环境搭建"></a>项目部署 环境搭建</h3><ol>
+<li><p>python 虚拟环境</p>
+</li>
+<li><p>django环境部署</p>
+<ul>
+<li>django软件安装</li>
+<li>项目基本操作</li>
+</ul>
+<a id="more"></a>
+
+<ul>
+<li>应用基本操作</li>
+<li>view和url配置</li>
+</ul>
+</li>
+<li><p>nginx代理django项目</p>
+<ul>
+<li>pcre软件安装</li>
+<li>nginx软件安装</li>
+<li>nginx基本操作</li>
+<li>nginx部署配置</li>
+</ul>
+</li>
+</ol>
+<p>创建以下目录</p>
+<ul>
+<li><p>backup 备份专用目录</p>
+</li>
+<li><p>code 代码专门目录</p>
+</li>
+<li><p>script 脚本专门目录</p>
+</li>
+<li><p>server 服务专用目录</p>
+</li>
+<li><p>soft 软件专用目录</p>
+</li>
+<li><p>virtual 虚拟环境目录</p>
+<p>mkdir /data/{backup,code…}</p>
+</li>
+</ul>
+<p>创建虚拟环境</p>
+<ul>
+<li><p>安装虚拟环境管理软件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install python-virtualenv -y</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>检验安装是否成功 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">which</span> virtualenv</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检查当前系统的python版本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls /usr/bin/ |grep python</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>创建虚拟环境</p>
+<ul>
+<li><p>进入项目虚拟环境</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /data/virtual</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用指定的python版本创建虚拟环境</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">virtualenv -p /usr/bin/python2.7 venv</span><br><span class="line"><span class="comment"># tree -L 2 venv 显示两层结构</span></span><br><span class="line">tree -L 2 venv</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>进入虚拟环境</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span>/. venv/bin/activate</span><br><span class="line"><span class="comment">#或者</span></span><br><span class="line">workon venv</span><br><span class="line"><span class="comment">#退出虚拟环境</span></span><br><span class="line">deactivate</span><br><span class="line"><span class="comment">#删除虚拟环境</span></span><br><span class="line">rm -fr venv</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装django</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install lrzsz</span><br></pre></td></tr></table></figure>
+
+<p>rz可以图形化将本地包传输到目标服务器</p>
+<p>sz可以图形化将目标服务器包传输到本地</p>
+<ul>
+<li><p>先进入虚拟环境 source ./venv/bin/activate</p>
+</li>
+<li><p>按readme.md查看如何安装,并进行安装 </p>
+</li>
+<li><p>源码安装pcre <code>./configure</code> | <code>make</code> | <code>make install</code></p>
+</li>
+<li><p>ldd 可执行文件  可以查看可执行文件的依赖库是否都有</p>
+</li>
+<li><p>软链接的是有 ln -s 文件名 软链接目标地址文件名</p>
+</li>
+<li><p>nginx 常用操作</p>
+<ul>
+<li>nginx -t 测试</li>
+<li>nginx 启动</li>
+<li>nginx -s stop 关闭</li>
+<li>nginx -s reloas 重载</li>
+<li>在配置文件中 proxy_pass 反向代理</li>
+</ul>
+<p>grep -v ‘#’ 文件名 查找没有#的内容 -v 取反</p>
+<p>egrep -v “#|^$” 文件名 支持正则的查找方式</p>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kekebing.com/myblogs/2019/07/25/项目部署 环境搭建/" data-id="cjyi4kmfv0003eov3z4jlv0m3" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/myblogs/tags/运维/">运维</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/myblogs/2019/07/25/text/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          text
+        
+      </div>
+    </a>
+  
+  
+    <a href="/myblogs/2019/07/25/shell常用的方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">shell常用的方法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/myblogs/tags/运维/">运维</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/myblogs/tags/运维/" style="font-size: 10px;">运维</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/myblogs/archives/2019/07/">July 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/myblogs/2019/07/25/text/">text</a>
+          </li>
+        
+          <li>
+            <a href="/myblogs/2019/07/25/项目部署 环境搭建/">项目部署</a>
+          </li>
+        
+          <li>
+            <a href="/myblogs/2019/07/25/shell常用的方法/">shell常用的方法</a>
+          </li>
+        
+          <li>
+            <a href="/myblogs/2019/07/25/项目部署/">项目部署流程</a>
+          </li>
+        
+          <li>
+            <a href="/myblogs/2019/07/22/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 shikeke<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/myblogs/" class="mobile-nav-link">Home</a>
+  
+    <a href="/myblogs/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/myblogs/fancybox/jquery.fancybox.css">
+  <script src="/myblogs/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/myblogs/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
