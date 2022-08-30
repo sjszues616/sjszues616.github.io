@@ -20,7 +20,7 @@
     <meta name="keywords"  content="我的博客">
     <meta name="theme-color" content="#000000">
     
-    <title>This is title - 我的博客 | My Blog | golang | python | open realtme bidding</title>
+    <title>test-123 - 我的博客 | My Blog | golang | python | open realtme bidding</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2019/04/21/This-is-Title/">
+    <link rel="canonical" href="http://0.0.0.0:8000/posts/5077a761/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -164,13 +164,13 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-swift2.jpg" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-bing-2022-8-25.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-swift2.jpg')
+        background-image: url('/img/post-bg-bing-2022-8-25.jpg')
     }
 
     
@@ -183,15 +183,15 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#Tylor" title="Tylor">Tylor</a>
+                        <a class="tag" href="/tags/#writing" title="writing">writing</a>
                         
                     </div>
-                    <h1>This is title</h1>
+                    <h1>test-123</h1>
                     
                     
-                    <h2 class="subheading">This is subtitle</h2>
+                    <h2 class="subheading"></h2>
                     
-                    <span class="meta">Posted by Wang Pei on April 21, 2019</span>
+                    <span class="meta">Posted by sjszues616 on August 31, 2022</span>
                 </div>
             </div>
         </div>
@@ -209,9 +209,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-				<h1 id="title">Title</h1>
-
-<p>content</p>
+				
 
 
                 <hr style="visibility: hidden;">
@@ -219,9 +217,9 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2019/03/29/Install-TensorFlow-GPU-by-Anaconda(conda-install-tensorflow-gpu)/" data-toggle="tooltip" data-placement="top" title="Install TensorFlow-GPU by Anaconda (conda install tensorflow-gpu)">
+                        <a href="/posts/5077a764/" data-toggle="tooltip" data-placement="top" title="This is title">
                         Previous<br>
-                        <span>Install TensorFlow-GPU by Anaconda (conda install tensorflow-gpu)</span>
+                        <span>This is title</span>
                         </a>
                     </li>
                     
@@ -247,7 +245,7 @@
                     admin: ['sjszues616'],
                     distractionFreeMode: 'true',
                     id: md5(location.pathname),
-                    proxy: '{{site.gitalk.proxy}}'
+                    proxy: 'https://cloudflare-cors-anywhere.sjszues616.workers.dev/?https://github.com/login/oauth/access_token'
                     });
                     gitalk.render('gitalk-container');
                 </script>
@@ -259,20 +257,6 @@
             </div>  
 
     <!-- Side Catalog Container -->
-        
-            <div class="
-                col-lg-2 col-lg-offset-0
-                visible-lg-block
-                sidebar-container
-                catalog-container">
-                <div class="side-catalog">
-                    <hr class="hidden-sm hidden-xs">
-                    <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
-                    </h5>
-                    <ul class="catalog-body"></ul>
-                </div>
-            </div>
         
 
     <!-- Sidebar Container -->
@@ -287,6 +271,8 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
+        				
+                            
         				
                             
         				
@@ -517,50 +503,6 @@
 
 
 <!-- Side Catalog -->
-
-<script type="text/javascript">
-    function generateCatalog (selector) {
-        var P = $('div.post-container'),a,n,t,l,i,c;
-        a = P.find('h1,h2,h3,h4,h5,h6');
-        a.each(function () {
-            n = $(this).prop('tagName').toLowerCase();
-            i = "#"+$(this).prop('id');
-            t = $(this).text();
-            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
-            l = $('<li class="'+n+'_nav"></li>').append(c);
-            $(selector).append(l);
-        });
-        return true;    
-    }
-
-    generateCatalog(".catalog-body");
-
-    // toggle side catalog
-    $(".catalog-toggle").click((function(e){
-        e.preventDefault();
-        $('.side-catalog').toggleClass("fold")
-    }))
-
-    /*
-     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
-     * Fork by Hux to support padding
-     */
-    async("/js/jquery.nav.js", function () {
-        $('.catalog-body').onePageNav({
-            currentClass: "active",
-            changeHash: !1,
-            easing: "swing",
-            filter: "",
-            scrollSpeed: 700,
-            scrollOffset: 0,
-            scrollThreshold: .2,
-            begin: null,
-            end: null,
-            scrollChange: null,
-            padding: 80
-        });
-    });
-</script>
 
 
 

@@ -3,11 +3,26 @@
   <channel>
     <title>My Blog</title>
     <description>技术的虔诚信徒</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Aug 2022 17:28:11 +0800</pubDate>
-    <lastBuildDate>Sun, 28 Aug 2022 17:28:11 +0800</lastBuildDate>
+    <link>http://0.0.0.0:8000/</link>
+    <atom:link href="http://0.0.0.0:8000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 31 Aug 2022 00:46:07 +0800</pubDate>
+    <lastBuildDate>Wed, 31 Aug 2022 00:46:07 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>test-123</title>
+        <description>
+</description>
+        <pubDate>Wed, 31 Aug 2022 00:24:52 +0800</pubDate>
+        <link>http://0.0.0.0:8000/posts/5077a761/</link>
+        <guid isPermaLink="true">http://0.0.0.0:8000/posts/5077a761/</guid>
+        
+        <category>writing</category>
+        
+        
+        <category>default</category>
+        
+      </item>
     
       <item>
         <title>This is title</title>
@@ -16,8 +31,8 @@
 &lt;p&gt;content&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Apr 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/04/21/This-is-Title/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/04/21/This-is-Title/</guid>
+        <link>http://0.0.0.0:8000/posts/5077a764/</link>
+        <guid isPermaLink="true">http://0.0.0.0:8000/posts/5077a764/</guid>
         
         <category>Tylor</category>
         
@@ -107,8 +122,8 @@ conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;tensorflow  &lt;span
 &lt;p&gt;If you encounter any problems, you can open an issue in the &lt;strong&gt;Comment area&lt;/strong&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 29 Mar 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/03/29/Install-TensorFlow-GPU-by-Anaconda(conda-install-tensorflow-gpu)/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/03/29/Install-TensorFlow-GPU-by-Anaconda(conda-install-tensorflow-gpu)/</guid>
+        <link>http://0.0.0.0:8000/posts/5077a762/</link>
+        <guid isPermaLink="true">http://0.0.0.0:8000/posts/5077a762/</guid>
         
         <category>ubuntu</category>
         
