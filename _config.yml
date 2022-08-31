@@ -1,13 +1,13 @@
 # Site settings
-title: My Blog
-SEOTitle: 我的博客 | My Blog | golang | python | open realtme bidding
+title: 技术 小屋
+SEOTitle: golang | python | open realtme bidding
 header-img: img/post-bg-bing-2022-8-25.jpg
-email: 暂无
+email: jason.js.shi@outlook.com
 description: "技术的虔诚信徒"
-keyword: "我的博客"
-url: "http://name.github.io"          # your host, for absolute URL
+keyword: "技术博客,分析我的见闻"
+url: "http://sjszues616.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/name/name.github.io.git" # you code repository
+github_repo: "https://github.com/sjszues616/sjszues616.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -20,7 +20,7 @@ sidebar-avatar: /img/avatar_binggan_2.jpg      # use absolute URL, seeing it's u
 RSS: false
 # weibo_username:     暂无
 zhihu_username:     暂无
-github_username:    暂无
+github_username:    sjszues616
 facebook_username:  暂无
 jianshu_username:   暂无
 #twitter_username:   暂无
@@ -73,7 +73,7 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 
+ba_track_id: eb0a251eefa500bdee3a605e54662e4c
 # Google Analytics
 ga_track_id:             # Format: UA-xxxxxx-xx
 ga_domain:                # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
@@ -97,7 +97,7 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WP",
-        href: "https://wangpei.ink"
+        title: "kuke",
+        href: "https://www.coolshell.cn/"
     }
 ]
